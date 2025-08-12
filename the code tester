@@ -1,0 +1,40 @@
+
+public class BankAccountTester
+{
+    public static void main(String[]args)
+    {
+        BankAccount Account1 = new BankAccount(); //first account
+        System.out.println("Account1 Number" + Account1.getAccountNumber());
+        System.out.println("Account1 Balance" + Account1.getBalance());
+        System.out.println("Account1 CustomerName" + Account1.getCustomerName());
+
+        System.out.println("-----------------------------------------------");
+        
+        BankAccount Account2 = new BankAccount(); //secomd account
+        System.out.println("Account2 Number" + Account2.getAccountNumber());
+        System.out.println("Account2 Balance" + Account2.getBalance());
+        System.out.println("Account2 CustomerName" + Account2.getCustomerName());
+
+             BankAccount Account3 = new BankAccount(); //secomd account
+
+       System.out.println("-----------------------------------------------");
+        System.out.println("Account3 Number" + Account3.getAccountNumber());
+        System.out.println("Account3 Balance" + Account3.getBalance());
+        System.out.println("Account3 CustomerName" + Account3.getCustomerName());
+      
+        System.out.println("-----------------------------------------------");
+        System.out.println("After changes");
+        System.out.println("-----------------------------------------------");
+
+        Account1.deposit(1000);
+        Account2.deposit(1000);
+        Account3.deposit(1000);
+
+        Account1.withdraw(500);
+                Account2.withdraw(200);
+
+        Account3.setCustomerName("Majed");
+                
+    }
+    
+}
